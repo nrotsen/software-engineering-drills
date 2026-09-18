@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+dist-web/
+
+# runtime state (per-user progress)
+progress.json
+
+# logs
+*.log
+
+# editor / OS
+.DS_Store
+.vscode/
+.idea/
+
+# tooling (local)
+.claude/
+.impeccable/

@@ -1,0 +1,44 @@
+{
+  "name": "guia-interactiva",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "CLI de estudio interactivo de ingenieria de software",
+  "bin": {
+    "guia": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/cli/index.ts",
+    "build": "tsc",
+    "start": "node dist/cli/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "preview": "tsx scripts/preview.ts",
+    "test:watch": "vitest",
+    "web": "vite",
+    "web:build": "vite build",
+    "web:preview": "vite preview"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.2.1",
+    "chalk": "^5.4.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^5.0.0",
+    "vite": "^8.2.2",
+    "@vitejs/plugin-react": "^6.1.1",
+    "tailwindcss": "^4.3.3",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
